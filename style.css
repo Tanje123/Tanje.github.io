@@ -2,12 +2,6 @@ body{
     margin: 0px;
     font-size: 100%;
     font-family: 'Heebo', cursive;
-    overflow-x: hidden;
-}
-
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
 }
 
 .content{
@@ -90,7 +84,7 @@ html, body {
     background-color: rgba(98,107,113,0);
     margin-left: 150px;
     border: none;
-    font-family: 'Heebo', cursive;
+    font-family: 'Big Shoulders Text', cursive;
     letter-spacing: 5px;
     font-size: 20px;
 }
@@ -185,21 +179,16 @@ nav{
         margin: 0px;
     }
 
-    .nav-active{
-        position: absolute;
-        transform: translateX(0%);
-        margin-top: 0;
-    }
-
     .signin-button{
         display: block;
     }
     .nav-links{
+        display: none;
+        position: absolute;
         right: 0px;
         height: 100%;
         top: 8vh;
         background-color: #33B8FF;
-        display: flex;
         flex-direction: column;
         align-items: center;
         width: 50%;
@@ -214,4 +203,9 @@ nav{
     }
 }
 
+.nav-active{
+    display: flex;
+    transform: translate(0%);
+    margin-top: 0;
+}
 
