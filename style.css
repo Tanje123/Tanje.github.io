@@ -2,6 +2,11 @@ body{
     margin: 0px;
     font-size: 100%;
     font-family: 'Heebo', cursive;
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 .content{
