@@ -17,7 +17,7 @@ function login() {
         }
     });
 
-    xhr.open("GET", "http://localhost:8000/authenticate/?username="+username);
+    xhr.open("GET", "https://offers-mobile.herokuapp.com/authenticate/?username="+username);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.setRequestHeader("cache-control", "no-cache");
     xhr.send(data);
@@ -50,7 +50,7 @@ function payout() {
         }
     });
 
-    xhr.open("GET", "http://127.0.0.1:8000/payout/");
+    xhr.open("GET", "https://offers-mobile.herokuapp.com/payout/");
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.setRequestHeader("Authorization", "Token "+sessionStorage.getItem('user_token'));
     xhr.setRequestHeader("cache-control", "no-cache");

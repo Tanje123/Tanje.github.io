@@ -53,7 +53,7 @@ function get_user_earning() {
         }
     });
 
-    xhr.open("GET", "http://127.0.0.1:8000/profile/");
+    xhr.open("GET", "https://offers-mobile.herokuapp.com/profile/");
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.setRequestHeader("Authorization", "Token "+sessionStorage.getItem('user_token'));
     xhr.setRequestHeader("cache-control", "no-cache");
@@ -95,7 +95,7 @@ function get_available_offers() {
         }
     });
 
-    xhr.open("GET", "http://127.0.0.1:8000/offers/?ip="+ip);
+    xhr.open("GET", "https://offers-mobile.herokuapp.com/offers/?ip="+ip);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.setRequestHeader("Authorization", "Token "+sessionStorage.getItem('user_token'));
     xhr.setRequestHeader("cache-control", "no-cache");
