@@ -8,8 +8,6 @@ function login() {
     xhr.addEventListener("readystatechange", function () {
         if (this.readyState === 4) {
             var token_value = this.responseText.substring(1, this.responseText.length-1);
-
-            alert(token_value);
             if (token_value) {
                 sessionStorage.setItem('user_token', token_value);
                 window.location.href = "earn.html"
