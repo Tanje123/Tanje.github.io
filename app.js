@@ -71,6 +71,7 @@ function get_available_offers() {
             alert(this.responseText)
             if (this.responseText == "987") {
                 alert("Please come back on a mobile device.");
+                window.location.href = "index.html";
                 return
             }
             html_list = document.getElementById("offer-list");
