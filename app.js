@@ -68,6 +68,10 @@ function get_available_offers() {
 
     xhr.addEventListener("readystatechange", function () {
         if (this.readyState === 4) {
+            if (this.responseText == "987") {
+                alert("Please come back on a mobile device.");
+                return
+            }
             html_list = document.getElementById("offer-list");
             list = JSON.parse(this.responseText);
             list.forEach(function (item, index) {
