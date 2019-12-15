@@ -68,7 +68,6 @@ function get_available_offers() {
 
     xhr.addEventListener("readystatechange", function () {
         if (this.readyState === 4) {
-            alert(this.responseText)
             if (this.responseText == "987") {
                 alert("Please come back on a mobile device.");
                 window.location.href = "index.html";
