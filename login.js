@@ -25,9 +25,11 @@ function login() {
 
 function check_logged_in() {
     if (sessionStorage.getItem('user_token')) {
-        if (url.indexOf("earn.html") != -1) {
-        } else {
-            window.location.href = "earn.html";
+        if (url) {
+            if (url.indexOf("earn.html") != -1) {
+            } else {
+                window.location.href = "earn.html";
+            }
         }
     } else {
         var url = window.location.href;
