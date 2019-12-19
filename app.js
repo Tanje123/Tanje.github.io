@@ -68,6 +68,10 @@ function get_available_offers() {
 
     xhr.addEventListener("readystatechange", function () {
         if (this.readyState === 4) {
+            if (ip.length > 15) {
+                alert("Unable to retrieve offers, please try later.");
+                return
+            }
             if (this.responseText == "987") {
                 alert("Please come back on a mobile device.");
                 window.location.href = "index.html";
