@@ -28,19 +28,26 @@
     </div>
 </nav>
 
+<div id="container" style="position:relative; z-index:1;">
 
-<div class="widget">
-    <h1 class="center-text">Earnings:</h1>
-    <h1 class="center-text" id="earning-amount"></h1>
-    <div class="divider"></div>
-    <div class="card">
-        <form class="form" action="javascript:payout()">
-            <h2 class="center-text">Profile</h2>
-        <div style="text-align:center;">
-            <h4 id="profile-email"></h4>
-            <button>Request Payout</button>
+    <div class="spinner" style="position:absolute; ">
+        <div class="loader"></div>
+    </div>
+    <div class="content" id="content-body" style="position:absolute;">
+        <div class="widget">
+            <h1 class="center-text">Earnings:</h1>
+            <h1 class="center-text" id="earning-amount"></h1>
+            <div class="divider"></div>
+            <div class="card">
+                <form class="form" action="javascript:payout()">
+                    <h2 class="center-text">Profile</h2>
+                    <div style="text-align:center;">
+                        <h4 id="profile-email"></h4>
+                        <button>Request Payout</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        </form>
     </div>
 </div>
 
