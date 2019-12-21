@@ -98,6 +98,10 @@ input {
     text-decoration: #33B8FF;
 }
 
+button{
+    font-size: 200%;
+}
+
 .signin-button{
     display: none;
     background-color: rgba(98,107,113,0);
