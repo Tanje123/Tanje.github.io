@@ -8,6 +8,13 @@ body{
     visibility: hidden;
 }
 
+h2{
+    font-size: 64px;
+}
+
+input {
+    width: 80%;
+}
 
 .spinner {
     width: 100%;
