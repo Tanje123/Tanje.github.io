@@ -1,0 +1,52 @@
+.divider {
+    display: block;
+    border-top-width: 1px;
+    border-top-style: solid;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.center-text{
+    text-align: center;
+}
+
+
+.demo-list-three {
+  width: 100%;
+}
+
+div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.caption {
+    display: block;
+    margin-top: 5px;
+}
+
+
+
+.badge {
+    display: block;
+    padding: .25em .4em;
+    font-size: 75%;
+    border-radius: .25rem;
+    background-color: #fee94b;
+}
+
+.demo-card-square.mdl-card {
+  width: 50%;
+  height: 50%;
+}
+.demo-card-square > .mdl-card__title {
+  background:
+    #fee94b;
+}
+
+.spinner{
+    width: 250px;
+    height: 250px;
+}
