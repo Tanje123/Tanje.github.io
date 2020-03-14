@@ -1,52 +1,111 @@
-.divider {
-    display: block;
-    border-top-width: 1px;
-    border-top-style: solid;
-    margin-left: 25px;
-    margin-right: 25px;
+body {
+    background-color: #F8F6EA;
+    margin:0;
 }
 
-.center-text{
+.burger-menu{
+    visibility: hidden;
+    cursor: pointer
+}
+
+.block{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+}
+
+.header{
+    background-color: #C8C6B6;
+    height: 64px;
+}
+
+.item-list{
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0;
     text-align: center;
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    margin: 0 0 0 45%;
+    width: 50%;
+    transform: translateY(-35px);
+}
+
+.item-list-hamburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
+    height: 100vh;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.vertical-list-top{
+    margin-top: 40px;
+}
+
+.vertical-list-bottom{
+    margin-bottom: 40px;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: whitesmoke;
+}
+
+.logo{
+    color: white;
+    display: flex;
+    margin-left: 8%;
+    font-size: 300%;
+    transition: all .2s ease-in-out;
+}
+
+.logo:hover {
+    transform: scaleY(1.1);
+}
+
+.burger-menu{
+    width: 8%;
+    height: 50%;
+    transform: translateY(-60px);
+    margin: 0 0 0 90%;
+}
+
+.burger-line{
+    height: 20%;
+    background-color: white;
+}
+
+.burger-line-middle{
+    height: 20%;
+    background-color: white;
+    margin-top: 20%;
+    margin-bottom: 20%;
 }
 
 
-.demo-list-three {
-  width: 100%;
+.menu-overlay{
+    background-color: #C8C6B6;
+    height: 100vh;
+    width: 50%;
+    transform: translateX(100%);
+    visibility: hidden;
 }
 
-div.item {
-    vertical-align: top;
-    display: inline-block;
-    text-align: center;
-    margin-right: 10px;
-}
+@media only screen and (max-width:620px) {
+    .item-list{
+        visibility: hidden;
+    }
 
-.caption {
-    display: block;
-    margin-top: 5px;
-}
-
-
-
-.badge {
-    display: block;
-    padding: .25em .4em;
-    font-size: 75%;
-    border-radius: .25rem;
-    background-color: #fee94b;
-}
-
-.demo-card-square.mdl-card {
-  width: 50%;
-  height: 50%;
-}
-.demo-card-square > .mdl-card__title {
-  background:
-    #fee94b;
-}
-
-.spinner{
-    width: 250px;
-    height: 250px;
+    .burger-menu{
+        visibility: visible;
+    }
 }
